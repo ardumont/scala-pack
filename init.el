@@ -1,7 +1,5 @@
-;; User pack init file
-;;
-;; User this file to initiate the pack configuration.
-;; See README for more information.
+(install-packs '(;; ensime needs scala-mode2
+                 scala-mode2))
 
 ;; Load bindings config
 (live-load-config-file "bindings.el")
