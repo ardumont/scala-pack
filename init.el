@@ -1,4 +1,5 @@
 (install-packs '(scala-mode2))
+(require' scala-mode2)
 
 ;; you need to setup your environment to have a variable name ENSIME_ROOT
 (setq ensime-root (getenv "ENSIME_ROOT"))
