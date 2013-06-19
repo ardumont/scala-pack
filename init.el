@@ -1,5 +1,16 @@
 (install-packs '(scala-mode2))
-(require' scala-mode2)
+
+;; ================= scala-mode2
+
+(require 'scala-mode2)
+
+;; strictly functional style
+(setq scala-indent:default-run-on-strategy scala-indent:eager-strategy)
+(setq scala-indent:indent-value-expression t)
+(setq scala-indent:align-parameters t)
+(setq scala-indent:align-forms t)
+
+;; ================= ensime
 
 ;; you need to setup your environment to have a variable name ENSIME_ROOT
 (setq ensime-root (getenv "ENSIME_ROOT"))
