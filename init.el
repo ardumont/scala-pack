@@ -10,6 +10,21 @@
 (setq scala-indent:align-parameters t)
 (setq scala-indent:align-forms t)
 
+(add-hook 'scala-mode-hook '(lambda ()
+  (require 'whitespace)
+
+  ;; clean-up whitespace at save
+  (make-local-variable 'before-save-hook)
+  (add-hook 'before-save-hook 'whitespace-cleanup)
+
+  (make-local-variable 'whitespace-style)
+  (setq whitespace-style '(face, tabs, trailing))
+
+  ;; turn on highlight. To configure what is highlighted, customize
+  ;; the *whitespace-style* variable. A sane set of things to
+  ;; highlight is: face, tabs, trailing
+  (whitespace-mode)))
+
 ;; ================= ensime
 
 ;; you need to setup your environment to have a variable name ENSIME_ROOT
