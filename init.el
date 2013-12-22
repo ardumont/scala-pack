@@ -47,3 +47,4 @@
 ;; Load bindings config
 (live-load-config-file "bindings.el")
 (live-load-config-file "akka/utils.el")
+(live-load-config-file "scala/utils.el")
