@@ -21,5 +21,5 @@
 
 (define-key scala-mode-map (kbd "C-c C-a a")   'scala/active-test-forward)
 (define-key scala-mode-map (kbd "C-c C-a C-a") 'scala/ignore-test-forward)
-(define-key scala-mode-map (kbd "C-c C-a i")   'scala/switch-log-to-debug)
-(define-key scala-mode-map (kbd "C-c C-a C-i") 'scala/switch-log-to-info)
+(define-key scala-mode-map (kbd "C-c C-a i")   'scala/switch-log-to-info)
+(define-key scala-mode-map (kbd "C-c C-a C-i") 'scala/switch-log-to-debug)
