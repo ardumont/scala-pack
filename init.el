@@ -1,4 +1,6 @@
-(install-packs '(scala-mode2))
+(setq *TEMPORARY-PACKAGE-ARCHIVES* package-archives)
+
+(install-packs '(scala-mode2) (add-to-list '*TEMPORARY-PACKAGE-ARCHIVES* '("melpa" . "http://melpa.milkbox.net/packages/") t))
 
 ;; ================= scala-mode2
 
