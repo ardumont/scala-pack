@@ -1,3 +1,9 @@
+;;; scala-pack.el --- Scala
+
+;;; Commentary:
+
+;;; Code:
+
 (setq *TEMPORARY-PACKAGE-ARCHIVES* package-archives)
 
 (install-packs '(scala-mode2) (add-to-list '*TEMPORARY-PACKAGE-ARCHIVES* '("melpa" . "http://melpa.milkbox.net/packages/") t))
@@ -50,3 +56,5 @@
 (live-load-config-file "bindings.el")
 (live-load-config-file "akka/utils.el")
 (live-load-config-file "scala/utils.el")
+
+;;; scala-pack.el ends here
