@@ -4,7 +4,11 @@
 
 ;;; Code:
 
-(install-packs '(scala-mode2))
+(install-packs '(scala-mode2
+                 smartscan))
+
+(require 'smartscan)
+(add-hook 'scala-mode-hook (lambda () (smartscan-mode)))
 
 ;; ================= scala-mode2
 
