@@ -4,6 +4,7 @@
 
 ;;; Code:
 
+(require 'install-packages-pack)
 (install-packs '(scala-mode2
                  smartscan))
 
@@ -122,4 +123,5 @@
 (define-key scala-mode-map (kbd "C-c C-a i")   'scala/switch-log-to-info)
 (define-key scala-mode-map (kbd "C-c C-a C-i") 'scala/switch-log-to-debug)
 
+(provide 'scala-pack)
 ;;; scala-pack.el ends here
