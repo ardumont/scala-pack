@@ -5,8 +5,8 @@
 ;;; Code:
 
 (require 'install-packages-pack)
-(install-packs '(scala-mode2
-                 smartscan))
+(install-packages-pack/install-packs '(scala-mode2
+                                       smartscan))
 
 (require 'smartscan)
 (add-hook 'scala-mode-hook (lambda () (smartscan-mode)))
